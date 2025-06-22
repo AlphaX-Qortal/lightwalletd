@@ -182,12 +182,12 @@ func (m *DarksideEmptyBlocks) GetCount() int32 {
 }
 
 func init() {
-	proto.RegisterType((*DarksideMetaState)(nil), "pirate.wallet.sdk.rpc.DarksideMetaState")
-	proto.RegisterType((*DarksideBlock)(nil), "pirate.wallet.sdk.rpc.DarksideBlock")
-	proto.RegisterType((*DarksideBlocksURL)(nil), "pirate.wallet.sdk.rpc.DarksideBlocksURL")
-	proto.RegisterType((*DarksideTransactionsURL)(nil), "pirate.wallet.sdk.rpc.DarksideTransactionsURL")
-	proto.RegisterType((*DarksideHeight)(nil), "pirate.wallet.sdk.rpc.DarksideHeight")
-	proto.RegisterType((*DarksideEmptyBlocks)(nil), "pirate.wallet.sdk.rpc.DarksideEmptyBlocks")
+	proto.RegisterType((*DarksideMetaState)(nil), "cash.z.wallet.sdk.rpc.DarksideMetaState")
+	proto.RegisterType((*DarksideBlock)(nil), "cash.z.wallet.sdk.rpc.DarksideBlock")
+	proto.RegisterType((*DarksideBlocksURL)(nil), "cash.z.wallet.sdk.rpc.DarksideBlocksURL")
+	proto.RegisterType((*DarksideTransactionsURL)(nil), "cash.z.wallet.sdk.rpc.DarksideTransactionsURL")
+	proto.RegisterType((*DarksideHeight)(nil), "cash.z.wallet.sdk.rpc.DarksideHeight")
+	proto.RegisterType((*DarksideEmptyBlocks)(nil), "cash.z.wallet.sdk.rpc.DarksideEmptyBlocks")
 }
 
 func init() { proto.RegisterFile("darkside.proto", file_darkside_proto_rawDesc) }

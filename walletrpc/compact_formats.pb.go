@@ -265,11 +265,11 @@ func (m *CompactOrchardAction) GetCiphertext() []byte {
 }
 
 func init() {
-	proto.RegisterType((*CompactBlock)(nil), "pirate.wallet.sdk.rpc.CompactBlock")
-	proto.RegisterType((*CompactTx)(nil), "pirate.wallet.sdk.rpc.CompactTx")
-	proto.RegisterType((*CompactSaplingSpend)(nil), "pirate.wallet.sdk.rpc.CompactSaplingSpend")
-	proto.RegisterType((*CompactSaplingOutput)(nil), "pirate.wallet.sdk.rpc.CompactSaplingOutput")
-	proto.RegisterType((*CompactOrchardAction)(nil), "pirate.wallet.sdk.rpc.CompactOrchardAction")
+	proto.RegisterType((*CompactBlock)(nil), "cash.z.wallet.sdk.rpc.CompactBlock")
+	proto.RegisterType((*CompactTx)(nil), "cash.z.wallet.sdk.rpc.CompactTx")
+	proto.RegisterType((*CompactSaplingSpend)(nil), "cash.z.wallet.sdk.rpc.CompactSaplingSpend")
+	proto.RegisterType((*CompactSaplingOutput)(nil), "cash.z.wallet.sdk.rpc.CompactSaplingOutput")
+	proto.RegisterType((*CompactOrchardAction)(nil), "cash.z.wallet.sdk.rpc.CompactOrchardAction")
 }
 
 func init() { proto.RegisterFile("compact_formats.proto", file_compact_formats_proto_rawDesc) }
